@@ -24,7 +24,7 @@
 			if(pg_query($conn, $query1)){
 				// Than create new item for that customer
 				$image = $_FILES['image']['name'];
-				$target = "img/".basename($image);
+				$target = "img/localDB/".basename($image);
 				$query2 = "INSERT INTO customeritem(category, item_name,
 				item_description, owner_passport, picture) VALUES('$jewelryCategory',
 				'$jewelryName','$jewelryDescriprion','$passport','$image')";
@@ -44,7 +44,7 @@
 		}
 		else{ // Existing customer - we need just the jewelry info
 			$image = $_FILES['image']['name'];
-			$target = "img/".basename($image);
+			$target = "img/localDB/".basename($image);
 			$query2 = "INSERT INTO customeritem(category, item_name,
 			item_description, owner_passport, picture) VALUES('$jewelryCategory',
 			'$jewelryName','$jewelryDescriprion','$passport','$image')";

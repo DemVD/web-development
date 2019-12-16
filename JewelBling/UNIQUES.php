@@ -1,3 +1,22 @@
+<?php 
+	require('config/db.php');
+	
+	// Create Query
+	$query = 'SELECT item_name, item_description, 
+	picture, price_original, price_current FROM owneditem 
+	WHERE category = \'UNIQUES\'';
+	
+	// Get Result
+	$result = pg_query($conn, $query);
+	
+	// Fetch data
+	$items = pg_fetch_all($result);
+	#var_dump($items);
+	
+	// Free results, close connection
+	pg_free_result($result);
+	pg_close($conn);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,20 +35,19 @@
 						<h1>UNIQUES</h1>
 					</div>
 					
-					<div>
+					<?php foreach($items as $item): ?>
 						<li>
-							<h3>Name from db</h3>
-							<p>description from db</p>
-							<p>pix from db</p>
+							<?php echo "<img src='img/localDB/".$item['picture']."' >"; ?>
+							<h3><?php echo $item['item_name']; ?></h3>
+							<p><?php echo $item['item_description']; ?></p>
+							<p>Current price: 
+							<?php echo $item['price_current']; ?>
+							</p>
+							<p>Original price: 
+							<?php echo $item['price_original']; ?>
+							</p>
 						</li>
-					</div>
-					<div>
-						<li>
-							<h3>Name2 from db</h3>
-							<p>description2 from db</p>
-							<p>pix2 from db</p>
-						</li>
-					</div>
+					<?php endforeach; ?>
 				</ul>
 			</article>
 			

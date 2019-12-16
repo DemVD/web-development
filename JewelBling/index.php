@@ -12,7 +12,7 @@
 	
 	<section id="boxes">
 		<div class="container">
-			<div class="box" onclick="location.href='index.php';" style="cursor:pointer;">
+			<div class="box" onclick="location.href='DISCOUNTS.php';" style="cursor:pointer;">
 				<img src="./img/Discounts.png">
 				<h3>Discount Jewelry</h3>
 				<p>JewelBling has its own discount category with 
@@ -24,7 +24,7 @@
 				<p>JewelBling has categorised its wares. Now you will 
 				find anything spesific, if we have it.<p>
 			</div>
-			<div class="box">
+			<div class="box" onclick="location.href='UNIQUES.php';" style="cursor:pointer;">
 				<img src="./img/Uniques.png">
 				<h3>Rare and Unique Jewelry</h3>
 				<p>JewelBling has rare and unique pieces, from 

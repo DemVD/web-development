@@ -108,6 +108,7 @@ header a:hover{
 	background-size:cover;
 	text-align:center;
 	color:#000000;
+	text-shadow: 1px 1px 1px #e8491d;
 }
 
 #showcase h1{
@@ -182,10 +183,29 @@ article#main-col{
 /* ---SERVICES--- */
 ul#services li{
 	list-style:none;
-	padding:20px;
+	padding:10px;
 	border:#cccccc solid 1px;
 	margin-bottom:5px;
 	background:#e6e6e6;
+	text-align:left;
+}
+
+#services2 ul{
+	margin:0;
+}
+
+#services2 li{
+	display:inline;
+}
+
+#services img{
+	width:90px;
+	float:left;
+}
+
+#services2 li:nth-child(3n):after{
+	content:"\A";
+	white-space:pre;
 }
 
 footer{
