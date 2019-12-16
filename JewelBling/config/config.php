@@ -1,7 +1,7 @@
 <?php
-	define('ROOT_URL', 'http://localhost/phpsandbox/website8/');
-	define('DB_HOST', 'localhost');
-	define('DB_USER', 'root');
-	define('DB_PASSWORD', '12345');
-	define('DB_NAME', 'phpblog');
+	define('ROOT_URL', 'http://localhost/phpsandbox/JewelBling/');
+	define('DB_HOST', 'host=localhost');
+	define('DB_NAME', 'dbname=jewelblingdb');
+	define('DB_USER', 'user=postgres');
+	define('DB_PW', 'password=12345');
 ?>
