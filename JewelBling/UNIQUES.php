@@ -29,27 +29,7 @@
 	
 	<section id="main">
 		<div class="container">
-			<article id="main-col">
-				<ul id="services">
-					<div class="dark">
-						<h1>UNIQUES</h1>
-					</div>
-					
-					<?php foreach($items as $item): ?>
-						<li>
-							<?php echo "<img src='img/localDB/".$item['picture']."' >"; ?>
-							<h3><?php echo $item['item_name']; ?></h3>
-							<p><?php echo $item['item_description']; ?></p>
-							<p>Current price: 
-							<?php echo $item['price_current']; ?>
-							</p>
-							<p>Original price: 
-							<?php echo $item['price_original']; ?>
-							</p>
-						</li>
-					<?php endforeach; ?>
-				</ul>
-			</article>
+			<?php include('inc/categoriesUnsortedList.php'); ?>
 			
 			<?php include('inc/sidebar.php'); ?>
 		</div>

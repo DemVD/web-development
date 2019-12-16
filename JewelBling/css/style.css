@@ -203,9 +203,8 @@ ul#services li{
 	float:left;
 }
 
-#services2 li:nth-child(3n):after{
-	content:"\A";
-	white-space:pre;
+#services h2{
+	color:#e8491d;
 }
 
 footer{
