@@ -23,27 +23,14 @@
 			'$firstName','$lastName','$fathersName','$email')";
 			if(pg_query($conn, $query1)){
 				// Than create new item for that customer
+				$image = $_FILES['image']['name'];
+				$target = "img/".basename($image);
 				$query2 = "INSERT INTO customeritem(category, item_name,
-				item_description, owner_passport) VALUES('$jewelryCategory',
-				'$jewelryName','$jewelryDescriprion','$passport')";
-				// Picture
-					$image = $_FILES['image']['name'];
-					#var_dump($image);
-					// image file directory
-					$target = "img/".basename($image);
-					$queryPic = "UPDATE customeritem SET picture='$image'
-					WHERE owner_passport='$passport'";
-					// Execute querry
-					pg_query($conn, $queryPic); // Store uploaded image info folder /img
-					// Now move uploaded pic into dir
-					if(move_uploaded_file($_FILES['image']['tmp_name'], $target)){
-						echo '<script type="text/javascript">alert("Image uploaded successfully");</script>';
-					}
-					else{
-						echo '<script type="text/javascript">alert("There was a problem uploading the image.");</script>';
-					}
+				item_description, owner_passport, picture) VALUES('$jewelryCategory',
+				'$jewelryName','$jewelryDescriprion','$passport','$image')";
 				if(pg_query($conn, $query2)){
 					#header('Location: '.ROOT_URL.'');
+					move_uploaded_file($_FILES['image']['tmp_name'], $target);
 					echo '<script type="text/javascript">alert("New customer, request sent!");</script>';
 				}
 				else{
@@ -56,27 +43,14 @@
 			}
 		}
 		else{ // Existing customer - we need just the jewelry info
+			$image = $_FILES['image']['name'];
+			$target = "img/".basename($image);
 			$query2 = "INSERT INTO customeritem(category, item_name,
-			item_description, owner_passport) VALUES('$jewelryCategory',
-			'$jewelryName','$jewelryDescriprion','$passport')";
-			// Picture
-				$image = $_FILES['image']['name'];
-				#var_dump($image);
-				// image file directory
-				$target = "img/".basename($image);
-				$queryPic = "UPDATE customeritem SET picture='$image'
-				WHERE owner_passport='$passport'";
-				// Execute querry
-				pg_query($conn, $queryPic); // Store uploaded image info folder /img
-				// Now move uploaded pic into dir
-				if(move_uploaded_file($_FILES['image']['tmp_name'], $target)){
-					echo '<script type="text/javascript">alert("Image uploaded successfully");</script>';
-				}
-				else{
-					echo '<script type="text/javascript">alert("There was a problem uploading the image.");</script>';
-				}
+			item_description, owner_passport, picture) VALUES('$jewelryCategory',
+			'$jewelryName','$jewelryDescriprion','$passport','$image')";
 			if(pg_query($conn, $query2)){
 				#header('Location: '.ROOT_URL.'');
+				move_uploaded_file($_FILES['image']['tmp_name'], $target);
 				echo '<script type="text/javascript">alert("Existing customer, request sent!");</script>';
 			}
 			else{

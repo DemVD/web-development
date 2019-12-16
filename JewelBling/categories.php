@@ -57,7 +57,7 @@
 							<p>Pricing: 1kRUB 500RUB</p>
 						</li>
 					</div>
-					<div onclick="location.href='BRACELES.php';"
+					<div onclick="location.href='BRACELETS.php';"
 					style="cursor:pointer;">
 						<li>
 							<h3>Bracelets</h3>
@@ -66,7 +66,7 @@
 							<p>Pricing: 1kRUB 500RUB</p>
 						</li>
 					</div>
-					<div onclick="location.href='NECKLACES';"
+					<div onclick="location.href='NECKLACES.php';"
 					style="cursor:pointer;">
 						<li>
 							<h3>Necklaces</h3>

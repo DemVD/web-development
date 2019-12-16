@@ -1,9 +1,8 @@
 <?php
 		$query = "SELECT picture FROM customeritem";
 		$result = pg_query($conn, $query);
-		while($row = pg_fetch_array($result)){
-			echo "<div>";
-				echo "<img src='img/".$row['picture']."' >";
-			echo "</div>";
+		while($row = pg_fetch_assoc($result)){
+			var_dump($row);
+			echo "<img src='img/".$row["picture"]."' >";
 		}
 	?>
