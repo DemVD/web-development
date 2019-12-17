@@ -41,6 +41,11 @@ ul{ /* unordered list */
 	padding-top:10px;
 	padding-bottom:10px;
 	color:#ffffff;
+	text-decoration:none;
+}
+
+.button1:hover{
+	background-color:#f25044;
 }
 
 .button2{
@@ -162,6 +167,10 @@ header a:hover{
 	width:90px;
 }
 
+#boxes .box:hover{
+	background-color:#d8d8d8;
+}
+
 /* ---SIDEBAR--- */
 aside#sidebar{
 	float:right;
@@ -178,6 +187,10 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
 article#main-col{
 	float:left;
 	width:65%;
+}
+
+#main-col .box:hover{
+	background-color:#d8d8d8;
 }
 
 /* ---SERVICES--- */

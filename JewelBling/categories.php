@@ -14,7 +14,7 @@
 				<ul id="services">
 					<div onclick="location.href='DISCOUNTS.php';"
 					style="cursor:pointer;">
-						<li>
+						<li class="box">
 							<img src="./img/Discounts.png">
 							<h3>DISCOUNTS</h3>
 							<p>Browse Hot jewelry, that has it's cheapest 
@@ -25,7 +25,7 @@
 					</div>
 					<div onclick="location.href='UNIQUES.php';"
 					style="cursor:pointer;">
-						<li>
+						<li class="box">
 							<img src="./img/Uniques.png">
 							<h3>UNIQUES</h3>
 							<p>Look at our Unique, Rare and out-of-the-usual 
@@ -36,7 +36,7 @@
 					</div>
 					<div onclick="location.href='RINGS.php';"
 					style="cursor:pointer;">
-						<li>
+						<li class="box">
 							<img src="./img/Rings.png">
 							<h3>Rings</h3>
 							<p>All kinds of rings. Variety of wedding 
@@ -48,7 +48,7 @@
 					</div>
 					<div onclick="location.href='EARRINGS.php';"
 					style="cursor:pointer;">
-						<li>
+						<li class="box">
 							<img src="./img/Earrings.png">
 							<h3>Earrings</h3>
 							<p>Totally unique and beautifull variety of earrings, from 
@@ -58,7 +58,7 @@
 					</div>
 					<div onclick="location.href='CHAINS.php';"
 					style="cursor:pointer;">
-						<li>
+						<li class="box">
 							<img src="./img/Chains.png">
 							<h3>Chains</h3>
 							<p>See all kinds of chains, of all lengths and 
@@ -69,7 +69,7 @@
 					</div>
 					<div onclick="location.href='BRACELETS.php';"
 					style="cursor:pointer;">
-						<li>
+						<li class="box">
 							<img src="./img/Bracelets.png">
 							<h3>Bracelets</h3>
 							<p>All kinds of bracelets: gold, silver..
@@ -79,7 +79,7 @@
 					</div>
 					<div onclick="location.href='NECKLACES.php';"
 					style="cursor:pointer;">
-						<li>
+						<li class="box">
 							<img src="./img/Necklaces.png">
 							<h3>Necklaces</h3>
 							<p>Necklaces, more than half have matching 

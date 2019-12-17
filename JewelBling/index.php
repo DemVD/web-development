@@ -16,7 +16,7 @@
 				<img src="./img/Discounts.png">
 				<h3>Discount Jewelry</h3>
 				<p>JewelBling has its own discount category with 
-				regular discounts on holidays and weekends!<p>
+				regular discounts!<p>
 			</div>
 			<div class="box" onclick="location.href='categories.php';" style="cursor:pointer;">
 				<img src="./img/Categories.png">
