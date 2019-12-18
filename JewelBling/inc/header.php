@@ -3,6 +3,9 @@
 <meta name="description" content="Jewelry, at best prices! Right from your home!">
 <meta name="keywords" content="web-design, html, css">
 <meta name="author" content="Vlad Demidov">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+</style>
 <?php $subLink=''.$_SERVER['PHP_SELF']; ?>
 <?php if($subLink == '/phpsandbox/JewelBling/index.php'): ?>
 	<title>JewelBling | Home</title>
